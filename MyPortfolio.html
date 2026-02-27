@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    /*                    Styling                     */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        
+    }
+    body{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        scroll-behavior: smooth;
+    }
+    section{
+        padding: 70px 10% ;
+    }
+    h1 ,h2 ,h3{
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    /*         Header        */
+    header{
+        margin: 0;
+        top: 0;
+        height: 50px;
+        background-color: black;
+        display: flex;
+        padding: 20px 5%;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;border-radius: 10px;
+        border-bottom:  1px solid darkgray;
+        text-decoration: none;
+        
+
+    }
+    nav a{
+        margin-left: 20px;
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(20, 255, 200);
+        transition: 0.5s;
+        justify-content: space-between;
+        
+        
+    }
+    nav :hover{
+        color: brown;
+    }
+    h2{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 17px;
+        align-content: center;
+    }
+    /*       Hero        */
+    #home{
+        margin-top:  100px;
+        text-align: center;
+    }
+    .pro-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 60%;
+        border-color: antiquewhite;
+        border-bottom: 10px;
+        
+    }
+    .role{
+        color: aliceblue;
+        margin-bottom: 15px;
+    }
+    .contact{
+        color: white;
+        font-size: 15px;
+    }
+    #about{
+      text-align: center;
+      margin: auto;
+      line-height: 1.5;
+      max-width: 800px;
+     
+    }
+    /*     skills   */
+    .skill-s{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 70px;
+    }
+    .skill-card{
+        background: rgb(17, 20, 23);
+        padding: 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+        width: 350px;
+        
+    }
+    .skill-card:hover{
+        transform: translate(3px);
+        background: #2c333c7c;
+        border: 1px solid;
+        border-color: aquamarine;
+
+    }
+    .skill-card ul{
+        margin-top: 10px;
+        padding-left: 20px;
+
+    }
+    /*        Projects      */
+    .projects-style{
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 70px;
+      flex-wrap: wrap;
+ }
+
+     .project-card{
+      background: #2c333c7c;
+     padding:20px;
+     border-radius:10px;
+     transition:0.3s;
+     width: 300px;
+ }
+
+      .project-card:hover{
+     transform:scale(1.03);
+     background: #2c333c7c;
+     border: 1px solid aquamarine;
+}
+ /*       Contact     */
+ #contact{
+    text-align: center;
+ }
+ 
+       .btn{
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 10px;
+        border-radius: 10px;
+        transition: 0.3s;
+        align-items: center;
+        justify-content: center;
+
+        }
+        .wa{
+            background: rgb(2, 51, 2);
+            color: white;
+        }
+        .wa:hover{
+            background: rgba(63, 65, 76, 0.488);
+            transition: 0.4s;
+
+        }
+        .email-s{
+            background: rgb(10, 10, 205);
+        }
+        .email-s:hover{
+            background: rgb(4, 68, 4);
+            transition: 0.5s;
+        }
+           
+
+</style>
+<body>
+    <header>
+        <h2 style="font-size: 20px;">Raj Kapali</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            </a>
+        </nav>
+    </header>
+<!-- ======== Hero ========= -->
+<section id="home">
+        <img src="/FB_IMG_1694096170045.jpg" alt="profile image" class="pro-img" >
+        <h1>Raj Kapali</h1>
+        <p class="role" style="color: azure;"> Full stack developer &  Coder</p>
+        <p class="contact"> 📧rajkapali13@gmail.com | 📲 Contact no: 9828412006, 9863550476 | 📍Kathmandu, Mhepi, Ajima temple</p>
+
+     </section>
+
+<!--                     About                   -->
+<section id="about">
+            <h2><b>About me</b></h2>
+            <p > I am a passionate developer and learning to code since 3 years. Now, im recently continuing my coding journey in NCMT College. I love to solve problems and also to learn different new coding and keep improving my skill.
+                I am interested in full-stack developing, creating games in certain feild i.e roblox etc, i also like to try different things that I seem is new in the Era.
+             I am eager to learn new technologies and collaborate with varieties of projects.   
+            </p>
+</section>
+ <!--                    Skills                     -->      
+<section id="skills">
+            <h2 style="text-align: center;"><b>Skills</b></h2>
+            <div class="skill-s">
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                </div>
+
+              <div class="skill-card">
+                  <h3>Tools</h3>
+                <ul>
+                    <li>VS code</li>
+                    <li>GitHUB</li>
+                </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Design</h3>
+                    <ul>
+                        <li>Colour Combination</li>
+                        <li>Css animation</li>
+                        <li>Typography</li>
+                    </ul>
+
+                </div>
+
+                <div class="skill-card">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+              
+            </div>
+</section>
+<!--      Projects     -->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-style">
+
+          <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Learnt and made portfolio using only html and Css. Which shows basics information to detailed information like address, e-mail, skill, contact and so on.</p>
+           </div>
+
+          <div class="project-card">
+            <h3>Website</h3>
+            <p>A website design using Html and Css. Eg: Sign-up page, full form designs and so on.</p>
+          </div>
+
+          <div class="project-card">
+            <h3>Dashboard</h3>
+            <p>Learnt to make dashboard layout features like table, forms and so on, with the help of only html and CSS</p>
+          </div>
+
+         </div>
+</section>
+          <!--      Contact      -->
+<section id="contact">
+                <h2 style="text-align: center;">Contact Me</h2>
+                <a href="https://wa.me/9779863550476" class="btn wa">Chat with me on WhatsApp</a>
+                <br>
+                <a href="mailto:rajkapali13@gmail.com" class="btn email-s"> Send me an E-mail</a>
+</section>
+<footer>
+    <p style="text-align: center; color: darkgray; background-color: rgba(67, 68, 67, 0.447);">&copy; | Raj Kapali | Portfolio</p>
+</footer>
+                            
+</body>
+</html>
